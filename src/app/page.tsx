@@ -8,7 +8,7 @@ const FileUpload = () => {
   const [connectedUsers, setConnectedUsers] = useState<number[]>([]);
 
   useEffect(() => {
-    wsRef.current = new WebSocket(process.env.NEXT_PUBLIC_WEBSOCKET_URL!);
+    wsRef.current = new WebSocket(`ws://${process.env.NEXT_PUBLIC_WEBSOCKET_URL}`);
 
     wsRef.current.onopen = () => {
       console.log("Connected to WebSocket server");
