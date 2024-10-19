@@ -38,4 +38,4 @@ function broadcastUserList() {
   });
 }
 
-console.log(`WebSocket server is running on ${process.env.NEXT_PUBLIC_WEBSOCKET_URL}`);
+console.log(`WebSocket server is running on  ws://${process.env.NEXT_PUBLIC_WEBSOCKET_URL}`);
